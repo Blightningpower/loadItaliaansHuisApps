@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Open URL Links</title>
-</head>
-<body>
-  <script>
-    window.onload = function() {
-      openUrlInNewTab('https://manage.wix.com/dashboard/25490743-a816-4bf5-830e-d37a99747ec9/restaurants/orders?referralInfo=sidebar');
-      openUrlInNewTab('https://orderbuddy.foodticket.nl/orders');
-      openUrlInNewTab('https://live-orders.takeaway.com/orders');
-    };
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-    function openUrlInNewTab(url) {
-      window.open(url, '_blank');
+  <style>
+    html,
+    body {
+      min-width: 100vw;
+      min-height: 100vh;
+      margin: 0;
     }
-  </script>
+
+    .iframe-container {
+      display: flex;
+      flex-direction: column;
+      min-width: 100vw;
+      min-height: 100vh;
+      float: inline-end;
+    }
+
+    iframe {
+      min-width: 100vw;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="iframe-container">
+    <iframe
+      src="https://manage.wix.com/dashboard/25490743-a816-4bf5-830e-d37a99747ec9/restaurants/orders?referralInfo=sidebar"></iframe>
+    <iframe src="https://orderbuddy.foodticket.nl/orders"></iframe>
+    <iframe src="https://live-orders.takeaway.com/orders"></iframe>
+  </div>
 </body>
+
 </html>

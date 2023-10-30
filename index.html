@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open URL Links</title>
+</head>
+<body>
+  <script>
+    window.onload = function() {
+      openUrlInNewTab('https://manage.wix.com/dashboard/25490743-a816-4bf5-830e-d37a99747ec9/restaurants/orders?referralInfo=sidebar');
+      openUrlInNewTab('https://orderbuddy.foodticket.nl/orders');
+      openUrlInNewTab('https://live-orders.takeaway.com/orders');
+    };
+
+    function openUrlInNewTab(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
